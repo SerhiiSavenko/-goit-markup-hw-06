@@ -508,37 +508,39 @@
                 <form class="register-form" name="register-form">
                     <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
                     <div class="register-form-group" role="group">
-                        <label>
-                            <span>Ім'я</span>
-                            <input type="text" name="" required>
-                            <svg widht="18" height="18">
+                        <label class="register-form-field">
+                            <span class="register-form-label">Ім'я</span>
+                            <input class="register-form-imput" type="text" name="" required minlength="3">
+                            <svg class="register-form-icon" width="18" height="18">
                                 <use href="./images/icons.svg#person"></use>
                             </svg>
                         </label>
-                        <label>
-                            <span>Телефон</span>
-                            <input type="tel" name="" required>
-                            <svg widht="18" height="18">
+                        <label class="register-form-field">
+                            <span class="register-form-label">Телефон</span>
+                            <input class="register-form-imput" type="tel" name="" required>
+                            <svg class="register-form-icon" width="18" height="18">
                                 <use href="./images/icons.svg#phone"></use>
                             </svg>
                         </label>
-                        <label>
-                            <span>Пошта</span>
-                            <input type="email" name="" required>
-                            <svg widht="18" height="18">
+                        <label class="register-form-field">
+                            <span class="register-form-label">Пошта</span>
+                            <input class="register-form-imput" type="email" name="" required>
+                            <svg class="register-form-icon" width="18" height="18">
                                 <use href="./images/icons.svg#email"></use>
                             </svg>
                         </label>
-                        <label>
-                            <span>Коментар</span>
-                            <textarea name="" rows="5" placeholder="Введіть текст"></textarea>
+                        <label class="register-form-field">
+                            <span class="register-form-label" class="register-form-label">Коментар</span>
+                            <textarea class="register-form-message" name="" rows="5" placeholder="Введіть текст"></textarea>
                         </label>
                     </div>
-                    <label for="">
-                        <input type="checkbox" name="" id="">
-                        <span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a> </span>
+                    <label class="register-form-agreement">
+                        <input class="register-form-chekbox" type="checkbox" name="" id="">
+                        <span class="register-form-desc">Погоджуюся з розсилкою та приймаю
+                             <a class="register-form-link" href="">Умови договору</a> 
+                        </span>
                     </label>
-                   <button type="submit">Відправити</button>
+                   <button class="register-form-btn button" type="submit">Відправити</button>
                 </form>
         </div>
     </div>

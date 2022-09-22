@@ -589,6 +589,7 @@ color: var(--basic-blue);
     background-color: var(--light-txt-cl);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 .modal-btn {
     position: absolute;
@@ -606,3 +607,73 @@ color: var(--basic-blue);
     background: var(--light-txt-cl);
 }
 
+/* Register form */
+
+.register-form-title {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+    margin: 0 0 12px 0;
+}
+
+.register-form-group {
+    margin-bottom: 20px;
+}
+
+.register-form-field {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+.register-form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--contacts-cl);
+    margin-bottom: 4px;
+}
+
+.register-form-imput {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 36px;
+    padding-right: 36px;
+    outline: transparent;
+
+    transition: border-color var(--transition-time) var(--transition-cubic);
+}
+.register-form-imput:focus {
+    border-color: var(--basic-blue);
+}
+
+.register-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    /* transform: translateY(-50%); */
+    transition: fill var(--transition-time) var(--transition-cubic);
+}
+
+.register-form-imput:focus + .register-form-icon {
+    fill: var(--basic-blue);
+}
+
+.register-form-agreement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.register-form-btn {
+    display: block;
+    margin: 0 auto;
+}
