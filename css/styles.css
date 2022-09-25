@@ -665,7 +665,9 @@ color: var(--basic-blue);
 .register-form-imput:focus + .register-form-icon {
     fill: var(--basic-blue);
 }
-
+.register-form-message {
+    width: 100%;
+}
 .register-form-agreement {
     display: flex;
     align-items: center;
